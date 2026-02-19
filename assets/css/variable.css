@@ -1,0 +1,95 @@
+@import url(/assets/css/includes/header.css);
+
+:root {
+    --primary-color: #FF3535;
+    --secondary-color: #000000;
+    --third-color: #191E25;
+    --black-soft: #23262B;
+    --black-shadow: #1F2126;
+    --soft-gray: #28303D;
+    --white-diamond: #FFFFFF;
+    --h1-phone-size: 1.125rem;
+    --h2-phone-size: 0.875rem;
+    --h3-phone-size: 0.75rem;
+    --h1-pc-size: 1.375rem;
+    --h2-pc-size: 1.125rem;
+    --h3-pc-size: 0.875rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    height: 100%;
+}
+
+main {
+    height: 100%;
+}
+
+label {
+    border: none;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: var(--softCyan);
+    text-decoration: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+svg{
+    cursor: pointer;
+}
+
+path {
+    fill: var(--white-diamond);
+}
+
+.text-h1-media {
+    font-size: var(--h1-phone-size);
+    font-family: 'Montserrat';
+    font-style: normal;
+}
+
+.text-h2-media {
+    font-size: var(--h2-phone-size);
+    font-family: 'roboto';
+}
+
+.text-h3-media {
+    font-size: var(--h3-phone-size);
+    font-family: 'roboto';
+}
+
+@media only screen and (min-width: 800px) {
+    .text-h1-media {
+        font-size: var(--h1-pc-size);
+    }
+
+    .text-h2-media,
+    ::placeholder {
+        font-size: var(--h2-pc-size);
+    }
+
+    .text-h3-media {
+        font-size: var(--h3-pc-size);
+    }
+}
