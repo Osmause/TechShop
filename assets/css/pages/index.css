@@ -1,1 +1,90 @@
 @import url(/assets//css/variable.css);
+
+.hero {
+    background-image: url(/assets/img/png/6d8ed4fc-5f61-4479-9433-f6360b5927b4-cover.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.content-hero {
+    z-index: 1;
+    color: var(--white-diamond);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-hero a {
+    width: 100%;
+    min-height: 100vh;
+    padding: 100%;
+}
+
+.product-list{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    background-color: green;
+    padding: 5%;
+    gap: 15px;
+}
+
+.product-list h1{
+    color: var(--white-diamond);
+}
+
+.product-list section {
+    color: var(--white-diamond);
+    width: 100%;
+}
+
+.slider{
+    width: 100%;
+}
+
+.column {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.card {
+    position: relative;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.img-card {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    background-color: var(--white-diamond);
+}
+
+.img-card img{
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.container-card {
+    display: inline-block;
+    padding: 5%;
+    position: absolute;
+    height: 230px;
+    width: 100%;
+    background-color: var(--secondary-color);
+}
+
+.svg-logo {
+    padding: 5%;
+    background-color: var(--secondary-color);
+}

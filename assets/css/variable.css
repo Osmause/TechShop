@@ -1,5 +1,5 @@
 @import url(/assets/css/includes/header.css);
-
+@import url(/assets/css/includes/footer.css);
 :root {
     --primary-color: #FF3535;
     --secondary-color: #000000;
@@ -59,9 +59,16 @@ svg{
     cursor: pointer;
 }
 
+input {
+    color: var(--white-diamond);
+    padding: 2% 5%;
+    border: 1px solid var(--black-soft);
+}
+
 path {
     fill: var(--white-diamond);
 }
+
 
 .text-h1-media {
     font-size: var(--h1-phone-size);
