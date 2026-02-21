@@ -25,16 +25,14 @@
     padding: 100%;
 }
 
-.product-list{
+.product-list {
     display: flex;
     flex-wrap: wrap;
-    position: absolute;
-    background-color: green;
     padding: 5%;
     gap: 15px;
 }
 
-.product-list h1{
+.product-list h1 {
     color: var(--white-diamond);
 }
 
@@ -43,7 +41,7 @@
     width: 100%;
 }
 
-.slider{
+.slider {
     width: 100%;
 }
 
@@ -51,8 +49,8 @@
     position: relative;
     width: 100%;
     min-height: 1px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .card {
@@ -63,13 +61,19 @@
 }
 
 .img-card {
-    display: inline-block;
+    display: block;
     width: 100%;
     position: relative;
     background-color: var(--white-diamond);
 }
 
-.img-card img{
+.img-card figure {
+    margin: 0;
+    display: block;
+    line-height: 0;
+}
+
+.img-card img {
     width: 100%;
     object-fit: contain;
 }
@@ -78,13 +82,64 @@
 .container-card {
     display: inline-block;
     padding: 5%;
-    position: absolute;
     height: 230px;
     width: 100%;
     background-color: var(--secondary-color);
 }
 
+.container-information + .info {
+    margin-top: 20px;
+}
+
+.container-information {
+    display: flex;
+    gap:10px;   
+}
+
+.svg-container{
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+
 .svg-logo {
-    padding: 5%;
-    background-color: var(--secondary-color);
+    padding: 15%;
+    border-radius: 10px;
+    height: min-content;
+    background-color: var(--primary-color);
+}
+
+.information h1 + p {
+     margin-top: 5px;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+.rank{
+    display: flex;
+    width: min-content;
+}
+
+.rank path{
+    fill: var(--primary-color)
+}
+
+.rank .unrated {
+    fill: var(--white-diamond); 
+}
+
+.detail{
+    display: flex;
+    justify-content: center;
+}
+
+.detail a {
+    padding: 2% 5%;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+}
+
+.info + .detail {
+    margin-top: 10px;
 }
