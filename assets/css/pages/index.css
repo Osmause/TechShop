@@ -1,5 +1,6 @@
 @import url(/assets//css/variable.css);
 
+
 .hero {
     background-image: url(/assets/img/png/6d8ed4fc-5f61-4479-9433-f6360b5927b4-cover.png);
     background-size: cover;
@@ -22,7 +23,10 @@
 .content-hero a {
     width: 100%;
     min-height: 100vh;
-    padding: 100%;
+}
+
+.product-list .text-h1-media{
+    color: var(--secondary-color);
 }
 
 .product-list {
@@ -82,7 +86,7 @@
 .container-card {
     display: inline-block;
     padding: 5%;
-    height: 230px;
+    height: auto;
     width: 100%;
     background-color: var(--secondary-color);
 }
@@ -142,4 +146,30 @@
 
 .info + .detail {
     margin-top: 10px;
+}
+
+.blog-list{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.result{
+    width: auto;
+    max-width: 100%;
+}
+
+@media only screen and (min-width: 800px) {
+
+    .card{
+        width: 25%;
+    }
+
+    .result{
+        max-width: 50%;
+    }
+
+    .svg-container{
+        width: 10%;
+    }
+
 }

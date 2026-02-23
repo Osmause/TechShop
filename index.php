@@ -12,8 +12,7 @@
     <?php include('./includes/header.html'); ?>
     <main>
         <section class="hero">
-            <div class="content-hero">
-            </div>
+            <div class="content-hero"></div>
         </section>
         <section class="product-list">
             <h1 class="text-h1-media">Nos produits</h1>
@@ -79,7 +78,6 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </li>
                     <li></li>
@@ -88,6 +86,37 @@
                     <li></li>
                     <li></li>
                 </ul>
+            </div>
+        </section>
+        <section class="blog">
+            <div class="blog-list">
+            <ul>
+                 <li class="blog-result">
+                    <a href="#">
+                        <img class="result" src="/assets/img/jpg/wallPaper_01.jpg" alt="">
+                    </a>
+                </li>
+                    <li class="blog-result">
+                    <a href="#">
+                        <img class="result" src="/assets/img/jpg/wallPaper_01.jpg" alt="">
+                    </a>
+                </li>      
+                <li class="blog-result">
+                    <a href="#">
+                        <img class="result" src="/assets/img/jpg/wallPaper_01.jpg" alt="">
+                    </a>
+                </li>
+                      <li class="blog-result">
+                    <a href="#">
+                        <img class="result" src="/assets/img/jpg/wallPaper_01.jpg" alt="">
+                    </a>
+                </li>
+                      <li class="blog-result">
+                    <a href="#">
+                        <img class="result" src="/assets/img/jpg/wallPaper_01.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
             </div>
         </section>
     </main>

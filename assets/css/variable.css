@@ -28,6 +28,11 @@ body {
     height: 100%;
 }
 
+
+main{
+    height: auto;
+}
+
 label {
     border: none;
 }
