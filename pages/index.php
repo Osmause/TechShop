@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <?php include('./includes/header.html'); ?>
+    <?php include('../includes/header.html'); ?>
     <main>
         <section class="hero">
             <div class="content-hero"></div>
@@ -22,7 +22,7 @@
                         <div class="column">
                             <div class="card">
                                 <div class="img-card">
-                                    <figure><img src="./assets/img/jpg/rogstrix.jpg" alt=""></figure>
+                                    <figure><img src="/assets/img/jpg/rogstrix.jpg" alt=""></figure>
                                 </div>
                                 <div class="container-card">
                                     <div class="container-information">
@@ -120,7 +120,7 @@
             </div>
         </section>
     </main>
-    <?php include('./includes/footer.html'); ?>
+    <?php include('../includes/footer.html'); ?>
 </body>
 <script type="module" src="/assets/js/main.js"></script>
 

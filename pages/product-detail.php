@@ -109,5 +109,5 @@
     </main>
     <?php include('../includes/footer.html'); ?>
 </body>
-
+<script type="module" src="/assets/js/main.js"></script>
 </html>
