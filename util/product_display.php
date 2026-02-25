@@ -63,28 +63,58 @@ function spec(array $product, string $key): mixed
  * =====================================================
  * @throws \JsonException
  */
-function renderPagination(Pagerfanta $pagerfanta): void
+            function renderPagination(Pagerfanta $pagerfanta): void
 {
-    $totalPages = $pagerfanta->getNbPages();
-    if ($totalPages > 1) {
-        echo '<nav>';
-        if ($pagerfanta->hasPreviousPage()) {
-            echo '<a href="?page=' . $pagerfanta->getPreviousPage() . '">&laquo; Précédent</a>';
-        }
-        for ($i = 1; $i <= $totalPages; $i++) {
-            if ($i === $pagerfanta->getCurrentPage()) {
-                echo '<span class="current">' . $i . '</span>';
-            } else if ($i === 1 || $i === $pagerfanta->getNbPages() || ($i >= $pagerfanta->getCurrentPage() - 2 && $i <= $pagerfanta->getCurrentPage() + 3)) {
-                echo '<a href="?page=' . $i . '">' . $i . '</a>';
-            } else if (($i === 2 && $pagerfanta->getCurrentPage() > 3) || ($i === $pagerfanta->getNbPages() - 2 && $pagerfanta->getCurrentPage() < $pagerfanta->getNbPages() - 3)) {
-                echo '...';
-            }
-        }
-        if ($pagerfanta->hasNextPage()) {
-            echo '<a href="?page=' . $pagerfanta->getNextPage() . '">Suivant &raquo;</a>';
-        }
-        echo '</nav>';
+    $totalPages  = $pagerfanta->getNbPages();
+    $currentPage = $pagerfanta->getCurrentPage();
+    $window      = 2; // how many pages before/after current
+
+    if ($totalPages <= 1) {
+        return;
     }
+
+    echo '<nav>';
+
+    // Previous button
+    if ($pagerfanta->hasPreviousPage()) {
+        echo '<a href="?page=' . $pagerfanta->getPreviousPage() . '">&laquo; Précédent</a>';
+    }
+
+    // Calculate window range
+    $start = max(1, $currentPage - $window);
+    $end   = min($totalPages, $currentPage + $window);
+
+    // Always show first page
+    if ($start > 1) {
+        echo '<a href="?page=1">1</a>';
+        if ($start > 2) {
+            echo '<span class="dots">...</span>';
+        }
+    }
+
+    // Middle pages
+    for ($i = $start; $i <= $end; $i++) {
+        if ($i === $currentPage) {
+            echo '<span class="current">' . $i . '</span>';
+        } else {
+            echo '<a href="?page=' . $i . '">' . $i . '</a>';
+        }
+    }
+
+    // Always show last page
+    if ($end < $totalPages) {
+        if ($end < $totalPages - 1) {
+            echo '<span class="dots">...</span>';
+        }
+        echo '<a href="?page=' . $totalPages . '">' . $totalPages . '</a>';
+    }
+
+    // Next button
+    if ($pagerfanta->hasNextPage()) {
+        echo '<a href="?page=' . $pagerfanta->getNextPage() . '">Suivant &raquo;</a>';
+    }
+
+    echo '</nav>';
 }
 
 /**

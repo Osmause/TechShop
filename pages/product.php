@@ -39,10 +39,6 @@ $pagerfanta->setCurrentPage(max((int)$page, 1));
 
     <main>
         <div data-component="product-wrapper">
-            <div data-component="pagination">
-                <?php renderPagination($pagerfanta); ?>
-            </div>
-
             <div data-component="filters">
                 <form>
                     <label for="category"></label>

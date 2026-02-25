@@ -1,5 +1,6 @@
 @import url(/assets/css/includes/header.css);
 @import url(/assets/css/includes/footer.css);
+
 :root {
     --primary-color: #FF3535;
     --secondary-color: #000000;
@@ -8,6 +9,7 @@
     --black-shadow: #1F2126;
     --soft-gray: #28303D;
     --white-diamond: #FFFFFF;
+    --footer-height: 260px;
     --h1-phone-size: 1.125rem;
     --h2-phone-size: 0.875rem;
     --h3-phone-size: 0.75rem;
@@ -29,7 +31,7 @@ body {
 }
 
 
-main{
+main {
     height: auto;
 }
 
@@ -56,7 +58,7 @@ button {
     border: none;
 }
 
-svg{
+svg {
     cursor: pointer;
 }
 

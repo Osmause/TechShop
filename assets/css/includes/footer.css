@@ -1,10 +1,9 @@
 footer {
     width: 100%;
+    height: var(--footer-height);
     background-color: var(--secondary-color);
     padding: 5%;
 }
-
-
 
 footer > ul {
     display: flex;

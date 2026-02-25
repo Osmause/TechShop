@@ -14,6 +14,9 @@
 .product-card {
     position: relative;
     border-radius: 10px;
+    border: 1px solid var(--black-soft);
+    box-shadow: 1px var(--black-soft);
+    margin-bottom: 10px;
     overflow: hidden;
 }
 
@@ -28,7 +31,6 @@
 
 
 .container {
-    background-color: tomato;
     padding: 5%;
 }
 
