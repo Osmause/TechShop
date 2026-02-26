@@ -9,9 +9,12 @@
 </head>
 
 <body>
+    <?php ?>
+
+
     <?php include('../includes/header.html'); ?>
     <main>
-        <form action="action_page_contact.php" method="get" id="formhelp">
+        <form action="action_page_contact.php" method="post" id="formhelp">
             <div class="identity">
                 <div class="name-container">
                     <label class="text-h2-media" for="fname">Nom</label>
@@ -34,5 +37,4 @@
     <?php include('../includes/footer.html'); ?>
 </body>
 <script type="module" src="../assets/js/main.js"></script>
-
 </html>

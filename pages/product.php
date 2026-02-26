@@ -64,7 +64,6 @@ $pagerfanta->setCurrentPage(max((int)$page, 1));
             </div>
         </div>
     </main>
-
     <?php include('../includes/footer.html'); ?>
 </body>
 </html>

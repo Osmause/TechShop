@@ -1,7 +1,9 @@
 @import url(/assets/css/variable.css);
 
-form {
-  height: calc(100% - var(--footer-heigth) - 10%);
+
+main{
+    height: calc(100% - var(--footer-height) - -10%);
+    padding: 5%;
 }
 
 main form,
@@ -13,7 +15,7 @@ main form,
     gap: 10px;
 }
 
-.identity{
+.identity {
     gap: 10px;
 }
 
@@ -42,8 +44,8 @@ main textarea,
 
 @media only screen and (min-width:800px) {
 
-    form{
-          height: calc(100% - var(--footer-heigth) - 20%);
+    form {
+        height: calc(100% - var(--footer-heigth) - 20%);
 
     }
 
@@ -69,7 +71,8 @@ main textarea,
         gap: 10px;
     }
 
-    main input, .submit {
+    main input,
+    .submit {
         padding: 2%;
     }
 }
