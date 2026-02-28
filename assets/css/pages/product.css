@@ -1,8 +1,5 @@
 @import url(/assets/css/variable.css);
 
-
-
-
 .column {
     position: relative;
     width: 100%;
@@ -40,15 +37,18 @@ p {
 
 }
 
-@media only screen and (min-width: 800px) {
+.pagination-nav{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
 
+@media only screen and (min-width: 800px) {
 
     .grid {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-
         grid-auto-rows: auto;
-
         grid-gap: 1rem;
     }
 

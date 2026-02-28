@@ -73,7 +73,7 @@ function spec(array $product, string $key): mixed
         return;
     }
 
-    echo '<nav>';
+    echo '<nav class="pagination-nav">';
 
     // Previous button
     if ($pagerfanta->hasPreviousPage()) {
@@ -332,7 +332,6 @@ function renderCableCard(array $product): void
             <p><?= e(spec($product, 'length_m')) ?></p>
             <p><?= e(spec($product, 'type_connection')) ?></p>
             <a href="?id=<?php echo $product['id']; ?>">Voir</a>
-
         </div>
     </div>
 <?php }

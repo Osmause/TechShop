@@ -93,7 +93,7 @@ input {
         width: 100%;
     }
 
-    .pc ul {
+    .pc .pc-nav-menu {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -127,5 +127,45 @@ input {
 
     .mobile {
         display: none;
+    }
+
+    nav li {
+        position: relative;
+    }
+
+
+    .mega-menu {
+        display: none;
+        position: absolute;
+        left: 0;
+        z-index: 5;
+        background-color: var(--soft-gray);
+    }
+
+    li:hover .mega-menu {
+        display: block;
+    }
+
+    .mega-sub-menu {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        padding: 5%;
+    }
+
+    .mega-sub-menu ul {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        min-width: 130px;
+    }
+
+    .mega-sub-menu ul li {
+        white-space: nowrap;
+        width: auto;
+        padding: 5% 0;
     }
 }

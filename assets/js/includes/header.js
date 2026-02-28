@@ -5,6 +5,7 @@ export function initHeader() {
   let titleHeader = document.querySelector(".title-header");
   let searchBtn = document.querySelector(".search-drop");
   let searchBar = document.querySelector(".search-filter");
+  let megaMenu = document.querySelector(".mega-menu");
   let elementsDrop = [titleHeader, searchBtn];
 
   dropdownBtn.addEventListener("click", () => {

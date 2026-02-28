@@ -36,20 +36,51 @@
             </div>
         </div>
         <nav class="pc">
-            <ul>
-                <li>        
+            <ul class="pc-nav-menu">
+                <li class="pc-menu">
                     <figure><img class="logo" src="/assets/img/png/TechShop-Logo.png" alt=""></figure>
                 </li>
-                <li><a class="text-h2-media" href="../pages/index.php">Accueil</a></li>
-                <li><a class="text-h2-media" href="../pages/product.php">Produits</a></li>
-                <li><a class="text-h2-media" href="../pages/contact.php">Contact</a></li>
-                <li>
+                <li ><a class="text-h2-media pc-menu" href="../pages/index.php">Accueil</a></li>
+                <li class="pc-menu">
+                    <a class="text-h2-media" href="../pages/product.php">Produits</a>
+                    <div class="mega-menu">
+                        <div class="mega-sub-menu">
+                            <ul>
+                                <li>Ordinateur portable</li>
+                                <li>Smartphone</li>
+                                <li>Tour</li>
+                                <li>Gaming</li>
+                            </ul>
+
+                            <ul>
+                                <li>Carte mère</li>
+                                <li>Carte graphique</li>
+                                <li>Boitier</li>
+                                <li>Cooling</li>
+                                <li>Alimentation</li>
+                                <li>Réseau</li>
+                                <li>Ram</li>
+                            </ul>
+
+                            <ul>
+                                <li>Clavier</li>
+                                <li>Souris</li>
+                                <li>Casque</li>
+                                <li>Streaming</li>
+                                <li>Manette</li>
+                                <li>Casque VR</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li><a class="text-h2-media pc-menu" href="../pages/contact.php">Contact</a></li>
+                <li class="pc-menu">
                     <form action="">
-                    <input type="text" name="search-" id="search"
-                        placeholder="Asus, RAM 64G, Ecran Oled...">
+                        <input type="text" name="search-" id="search" placeholder="Asus, RAM 64G, Ecran Oled...">
                     </form>
                 </li>
-                <li>
+                <li class="pc-menu">
                     <div class="feature-icon">
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -67,5 +98,6 @@
                 </li>
             </ul>
         </nav>
+
     </div>
 </header>
